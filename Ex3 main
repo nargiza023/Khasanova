@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args){
+
+        Cat garfield = new Cat("лазанья","дом");
+        Dog kabosu = new Dog("косточка","дом");
+        Horse bojack = new Horse("трава","ферма");
+        Animal[] array = {garfield,kabosu,bojack};
+
+        Veterinarian doctor = new Veterinarian();
+        for(Animal i:array){
+            doctor.treatAnimal(i);
+            System.out.println("----------");
+        }
+
+
+    }
+}
