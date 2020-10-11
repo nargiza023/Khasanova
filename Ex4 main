@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        User customer = new User("admin", "root");//создание объекта класса User
+        Product laptop = new Product("HP Pavilion Gaming - 15-ec0013ur", 320000, 4.7);//создание объекта класса товар
+        customer.buy(laptop);//покупка товара пользователем
+        customer.purchased.show();//показ купленных товаров
+
+
+    }
+}
