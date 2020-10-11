@@ -1,0 +1,13 @@
+public static void main(String[] args){
+        Student s1 = new Student("Student1","2","2",5.0);//создание объекта класса Student
+        Student[] arr = new Student[10];//создание массива типа Student
+        arr[0] = s1;
+        Aspirant as1 = new Aspirant("Aspirant1","2","2",4.0,"science");//создание объекта типа Aspirant
+        arr[1] = as1;
+        System.out.println(arr[0].firstName+"'s scholarship: "+arr[0].getScholarship());
+        System.out.println(arr[1].firstName+"'s scholarship: "+arr[1].getScholarship());
+        Student s2 = as1;//переменная типа Student, которая ссылается на объект типа Aspirant
+
+
+    }
+}
