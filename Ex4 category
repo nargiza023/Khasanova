@@ -1,0 +1,4 @@
+public class Category {
+    String categoryName;
+    Product[] available = new Product[1000];
+}
