@@ -1,0 +1,36 @@
+public class Phone {
+    String number;
+    String model;
+    double weight;
+
+    public Phone() { }//конструктор без параметров.
+
+    public Phone(String number, String model) {//конструктор, который принимает на вход два параметра для инициализации переменных класса
+        this.number = number;
+        this.model = model;
+    }
+
+
+    public Phone(String number, String model, double weight) {//конструктор с тремя параметрами который вызывает конструктор с двумя
+        this(number,model);
+        this.weight = weight;
+    }
+
+
+    public void receiveCall(String name) {
+        System.out.println("/////////////////////////");
+        System.out.println("//// Звонит " + name+"////");
+        System.out.println("////////////\uD83D\uDCDE///////////");
+    }
+
+    public void receiveCall(String name, String number) {
+        System.out.println("/////////////////////////");
+        System.out.println("//// Звонит " + name+"////");
+        System.out.println("////  "+number+"  /////");
+        System.out.println("////////////\uD83D\uDCDE///////////");
+    }
+
+    public String getNumber() {
+        return this.number;
+    }
+}
