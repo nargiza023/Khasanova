@@ -1,0 +1,21 @@
+public class Main 
+    public static void textArea(String text){
+
+    }
+    public static void main(String[] args){
+        Phone Pixel4 = new Phone("+77xxxxxxxxx","Pixel4",110);
+        System.out.println("Number: "+Pixel4.number);
+        System.out.println("Model: "+Pixel4.model);
+        System.out.println("Weight: "+Pixel4.weight);
+        Pixel4.receiveCall("Boss");
+
+        System.out.print("\n\n");
+        Phone IphoneX = new Phone("+77xxxxxxxxx","IphoneX");
+        System.out.println("Number: "+IphoneX.getNumber());
+        System.out.println("Model: "+IphoneX.model);
+        IphoneX.receiveCall("Colleague","+77775954696");
+
+        Phone Unidentified = new Phone();
+
+    }
+}
